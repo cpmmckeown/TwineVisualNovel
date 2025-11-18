@@ -494,7 +494,42 @@ You must add sounds to the hal.tracks passage and have them in your project fold
 
 &lt;/div&gt;&lt;!--ENDOFVNSTAGE--&gt;
 
-}}}</tw-passagedata></tw-storydata>
+}}}</tw-passagedata><tw-passagedata pid="17" name="Untitled Passage" tags="" position="350,700" size="100,100">&lt;!--Copy/Paste this blank Passage to tell your story--&gt;
+
+{{{ &lt;!--These 3 curly braces stop Twine Harlowe from autoformatting what comes below. This can be really useful for stopping animations doing weird things--&gt;
+
+&lt;div id=&quot;vn-background&quot;&gt;&lt;/div&gt;
+&lt;!--This is your background. Set the image in the CSS or use the enchant macro--&gt;
+
+&lt;div id=&quot;vn-stage&quot;&gt;
+&lt;!--This is the &#39;space&#39; the game takes place in. Leave this alone--&gt;
+
+&lt;!--Below is the relationship menu. You can copy paste this into any passage where you want the relationship menu to be visible. You can add animation macros to this--&gt;
+|closedMenu&gt;[(link-rerun:&quot;&lt;img class=&#39;icon&#39; id=&#39;menuOpen&#39; src=&#39;VNAssets/randoseru.png&#39;&gt;&lt;/img&gt;&quot;)[(show:?openedMenu)(hide:?closedMenu)]]
+|openedMenu)[
+Haruka likes you $harukaRel &lt;br&gt;
+Evil Haruka likes you $evilHarukaRel &lt;br&gt;
+(link-rerun:&quot;X&quot;)[(show:?closedMenu)(hide:?openedMenu)]
+]
+
+&lt;!--This is where you put characters--&gt;
+&lt;div id=&quot;vn-character&quot;&gt;&lt;img src=&quot;Your Assets Folder/Your Pictures.png&quot;&gt;&lt;/div&gt;
+
+&lt;!--This is where you put dialogue--&gt;
+&lt;div id=&quot;vn-dialogue&quot;&gt;
+  &lt;div id=&quot;vn-name&quot;&gt;Your Character Name&lt;/div&gt;
+  “Placeholder dialogues”   
+  [[]] [[]] &lt;!--Choices--&gt;  
+&lt;/div&gt;
+
+&lt;!-- 
+add sounds like this: (track: &#39;example&#39;, &#39;play&#39;) 
+You must add sounds to the hal.tracks passage and have them in your project folder
+--&gt;
+
+&lt;/div&gt;&lt;!--ENDOFVNSTAGE--&gt;
+
+}}}	</tw-passagedata></tw-storydata>
 <script title="Twine engine code" data-main="harlowe">(function(){"use strict";
 var require,define;!function(){var e={},r={};require=function(i){var n=e[i];return n&&(r[i]=n[1].apply(void 0,n[0].map(require)),e[i]=void 0),r[i]},(define=function(r,i,n){if("function"==typeof r)return r();e[r]=[i,n]}).amd=!0}();/*!
  * https://github.com/paulmillr/es6-shim
